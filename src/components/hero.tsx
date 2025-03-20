@@ -30,7 +30,7 @@ export function Hero() {
               d="M 80 0 L 0 0 0 80"
               fill="transparent"
               stroke="currentColor"
-              stroke-width="1"
+              strokeWidth="1"
             ></path>
           </pattern>
         </defs>

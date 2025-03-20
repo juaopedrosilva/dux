@@ -6,12 +6,12 @@ import { Textarea } from "./ui/textarea";
 
 export function Contacts() {
   return (
-    <section className="mt-4">
-      <div className="w-full max-w-screen-lg mt-12 mx-auto">
-        <div className="grid md:grid-cols-2 gap-12">
+    <section className="mt-20">
+      <div className="w-full max-w-screen-lg mt-12 mx-auto sm:p-0 p-4" >
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
           {/* Coluna Esquerda - Entre em Contato */}
           <div>
-            <h2 className="text-2xl font-bold  mb-4">
+            <h2 className="text-2xl font-semibold text-brand mb-4">
               Entre em Contato
             </h2>
             <p className="text-gray-600 mb-6">
@@ -43,8 +43,7 @@ export function Contacts() {
               <div className="rounded-md overflow-hidden border border-gray-200">
                 <iframe
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.160730004!2d-46.65846432363198!3d-23.562670161642277!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c92a3b5939%3A0xd80224e64ad3f154!2sAv.%20Paulista%2C%201471%20-%20Bela%20Vista%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2001311-927!5e0!3m2!1spt-PT!2sbr!4v1741960491008!5m2!1spt-PT!2sbr"
-                  width="600"
-                  height="450"
+                  className="w-full sm:w-[600px] sm:h-[450px] h-64"
                   style={{ border: 0 }}
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
@@ -55,8 +54,8 @@ export function Contacts() {
 
           {/* Coluna Direita - Formulário de Contato */}
           <div>
-            <h2 className="text-2xl font-bold mb-4">
-              Envie-nos um E-mail
+            <h2 className="text-2xl font-semibold text-brand mb-4">
+              Envie-nos uma mensagem
             </h2>
             <p className="text-gray-600 mb-6">
               Estamos sempre em busca de projetos interessantes.
@@ -65,39 +64,10 @@ export function Contacts() {
             <form className="space-y-4 bg-gray-50 p-6 rounded-md">
               <div>
                 <label
-                  htmlFor="email"
-                  className="block text-sm font-medium text-gray-700 mb-1"
-                >
-                  E-MAIL
-                </label>
-                <Input
-                  id="email"
-                  type="email"
-                  placeholder="Seu e-mail"
-                  className="w-full"
-                />
-              </div>
-
-              <div>
-                <label
-                  htmlFor="message"
-                  className="block text-sm font-medium text-gray-700 mb-1"
-                >
-                  MENSAGEM
-                </label>
-                <Textarea
-                  id="message"
-                  placeholder="Escreva sua mensagem"
-                  className="w-full min-h-[120px]"
-                />
-              </div>
-
-              <div>
-                <label
                   htmlFor="name"
                   className="block text-sm font-medium text-gray-700 mb-1"
                 >
-                  NOME
+                  Nome
                 </label>
                 <Input
                   id="name"
@@ -107,8 +77,37 @@ export function Contacts() {
                 />
               </div>
 
+              <div>
+                <label
+                  htmlFor="phone"
+                  className="block text-sm font-medium text-gray-700 mb-1"
+                >
+                  Telefone
+                </label>
+                <Input
+                  id="phone"
+                  type="tel"
+                  placeholder="Seu telefone"
+                  className="w-full"
+                />
+              </div>
+
+              <div>
+                <label
+                  htmlFor="message"
+                  className="block text-sm font-medium text-gray-700 mb-1"
+                >
+                  Mensagem
+                </label>
+                <Textarea
+                  id="message"
+                  placeholder="Sua mensagem"
+                  className="w-full"
+                />
+              </div>
+
               <div className="pt-2">
-                <Button className="bg-teal-500 hover:bg-teal-600">
+                <Button className="bg-brand w-full sm:w-auto">
                   Enviar
                 </Button>
               </div>

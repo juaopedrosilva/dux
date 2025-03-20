@@ -16,7 +16,7 @@ export function Numbers() {
   return (
     <section className="mt-20">
       <div className="mx-auto w-full max-w-xl px-4 text-center">
-        <h3 className="text-balance font-display text-3xl font-medium text-neutral-900">
+        <h3 className="text-balance font-display text-3xl font-semibold  text-brand">
           Nossos Resultados Falam Por Si
         </h3>
         <p className="mt-3 text-pretty text-lg text-neutral-500">
@@ -25,8 +25,8 @@ export function Numbers() {
           números que comprovam o impacto da nossa atuação!
         </p>
       </div>
-      <div className="w-full max-w-screen-lg mt-6 mx-auto flex justify-center sm:justify-around sm:flex-row flex-col">
-        <div className="">
+      <div className="w-full max-w-screen-lg mt-6 mx-auto flex justify-center sm:justify-around sm:flex-row flex-col sm:gap-0 gap-4">
+        <div className="flex justify-center flex-col items-center">
           <h3 className="text-balance font-display text-3xl font-medium text-neutral-900">
             +
             <AnimatedNumber
@@ -41,7 +41,8 @@ export function Numbers() {
             cases de sucesso
           </p>
         </div>
-        <div className="">
+        <div className="flex justify-center flex-col items-center">
+
           <h3 className="text-balance font-display text-3xl font-medium text-neutral-900">
             +
             <AnimatedNumber
@@ -56,7 +57,7 @@ export function Numbers() {
             depoimentos
           </p>
         </div>
-        <div className="">
+        <div className="flex justify-center flex-col items-center">
           <h3 className="text-balance font-display text-3xl font-medium text-neutral-900">
             <AnimatedNumber
               springOptions={{

@@ -6,14 +6,14 @@ import Link from "next/link";
 export function Footer() {
   return (
     <footer className="mt-4">
-      <div className="w-full max-w-screen-lg mt-12 mx-auto">
+      <div className="w-full max-w-screen-lg mt-12 mx-auto px-4 sm:px-6">
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-6">
           <div className="mb-4 md:mb-0">
-            <Link href="/" className="text-xl font-bold">
+            <Link href="/" className="text-xl font-bold text-brand">
               Dux
             </Link>
             <span className="ml-4 text-sm text-gray-500">
-              © 2025 Dux Consulting. Todos os direitos reservados.
+              © 2025 Dux Consultoria. Todos os direitos reservados.
             </span>
           </div>
           <nav className="flex flex-wrap gap-6">
@@ -33,7 +33,7 @@ export function Footer() {
             processos e maximizando resultados.
           </p>
           <div className="flex gap-4">
-            <Link href="http://instagram.com/consulturiadux"  target='_blank' aria-label="Twitter">
+            <Link href="http://instagram.com/consulturiadux" target='_blank' aria-label="Instagram">
               <Instagram className="h-5 w-5 text-gray-500 hover:text-gray-700" />
             </Link> 
           </div>

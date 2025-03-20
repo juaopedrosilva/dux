@@ -1,26 +1,28 @@
-"use client"; 
+"use client";
 import Image from "next/image";
-import { InfiniteSlider } from "./ui/infinite-slider";
+import { Button } from "./ui/button";
 
 export function Clients() {
-
   return (
-    <section className="mt-20">
-      <div className="mx-auto w-full max-w-xl px-4 text-center">
-        <h3 className="text-balance font-display text-3xl font-medium text-neutral-900">
-          Junte-se a Grandes Empresas que Confiam em Nós
-        </h3>
-        <p className="mt-3 text-pretty text-lg text-neutral-500">
-          Parcerias de sucesso que impulsionam inovação e crescimento.
-        </p>
-      </div>
-      <div className="w-full max-w-screen-lg mt-12 mx-auto flex justify-center sm:justify-around sm:flex-row flex-col">
-        <InfiniteSlider gap={32} reverse>
-          <Image src="/fiat-3.svg" alt="Apple Music logo" height={120} width={120} />
-          <Image src="/gol.png" alt="Chrome logo" height={120} width={120} />
-          <Image src="/alpargatas-logo.svg" alt="Strava logo" height={120} width={120} />
-          <Image src="/Rede_Bandeirantes_logo_2011.svg.png" alt="Strava logo" height={120} width={120} /> 
-        </InfiniteSlider>
+    <section className="mt-16 px-4">
+      <div className="w-full max-w-screen-lg mt-12 mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+        <div>
+          <h3 className="text-balance font-display text-3xl font-semibold text-brand text-center md:text-left">
+            Junte-se a Grandes Empresas que Confiam em Nós
+          </h3>
+          <p className="mt-3 text-pretty text-lg text-neutral-500 text-center md:text-left">
+            Parcerias de sucesso que impulsionam inovação e crescimento.
+          </p>
+          <div className="flex justify-center md:justify-start">
+            <Button variant="whatsapp" className="mt-5">Fale com um Especialista</Button>
+          </div>
+        </div>
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-2 gap-4 place-items-center">
+          <Image src="/fiat-3.svg" alt="Fiat logo" height={100} width={100} />
+          <Image src="/gol.png" alt="Gol logo" height={100} width={100} />
+          <Image src="/alpargatas-logo.svg" alt="Alpargatas logo" height={100} width={100} />
+          <Image src="/Rede_Bandeirantes_logo_2011.svg.png" alt="Rede Bandeirantes logo" height={100} width={100} />
+        </div>
       </div>
     </section>
   );

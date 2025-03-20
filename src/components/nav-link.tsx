@@ -4,6 +4,7 @@ interface NavLinkProps {
   children: string
 }
 
+
 export function NavLink({ href, children }: NavLinkProps) {
   return (
     <li>

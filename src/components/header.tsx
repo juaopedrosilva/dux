@@ -9,7 +9,7 @@ export function Header() {
       <div className="mx-auto w-full px-3 relative max-w-screen-lg lg:px-4 xl:px-0">
         <div className="flex h-14 items-center justify-between">
           <div className="grow basis-0">
-            <Image src="/logo.png" width={250} height={250} alt="Dux Logo" className="size-8 w-auto"  />
+            <Image src="/logo.png" width={75} height={75} alt="Dux Logo"  />
           </div>
           <nav data-orientation="horizontal" className="relative hidden lg:block">
             <div className="relative">
@@ -18,9 +18,10 @@ export function Header() {
                 className="group relative z-0 flex"
                 dir="ltr"
               >
-                <NavLink href="#sobre">Sobre Nós</NavLink>
-                <NavLink href="#solucoes">Soluções</NavLink>
-                <NavLink>Clientes</NavLink>
+                <NavLink href="#sobre">Quem somos</NavLink>
+                <NavLink href="">Consultoria</NavLink>
+                <NavLink href="">Clientes</NavLink>
+                <NavLink href="">Cursos</NavLink>
               </ul>
             </div>
           </nav>
