@@ -19,8 +19,8 @@ export function Header() {
                 dir="ltr"
               >
                 <NavLink href="#sobre">Quem somos</NavLink>
-                <NavLink href="">Consultoria</NavLink>
-                <NavLink href="">Clientes</NavLink>
+                <NavLink href="#solucoes">Consultoria</NavLink>
+                <NavLink href="#clientes">Clientes</NavLink>
                 <NavLink href="">Cursos</NavLink>
               </ul>
             </div>

@@ -6,11 +6,13 @@ export function Numbers() {
   const [value1, setValue1] = useState(0);
   const [value2, setValue2] = useState(0);
   const [value3, setValue3] = useState(0);
+  const [value4, setValue4] = useState(0);
 
   useEffect(() => {
-    setValue1(150);
-    setValue2(200);
-    setValue3 (15);
+    setValue1(3);
+    setValue2(12);
+    setValue3 (150);
+    setValue4 (200);
   }, []);
 
   return (
@@ -28,7 +30,7 @@ export function Numbers() {
       <div className="w-full max-w-screen-lg mt-6 mx-auto flex justify-center sm:justify-around sm:flex-row flex-col sm:gap-0 gap-4">
         <div className="flex justify-center flex-col items-center">
           <h3 className="text-balance font-display text-3xl font-medium text-neutral-900">
-            +
+         
             <AnimatedNumber
               springOptions={{
                 bounce: 0,
@@ -38,13 +40,12 @@ export function Numbers() {
             />
           </h3>
           <p className="mt-1 text-pretty text-lg text-neutral-500">
-            cases de sucesso
+          Países   
           </p>
         </div>
         <div className="flex justify-center flex-col items-center">
 
           <h3 className="text-balance font-display text-3xl font-medium text-neutral-900">
-            +
             <AnimatedNumber
               springOptions={{
                 bounce: 0,
@@ -54,12 +55,12 @@ export function Numbers() {
             />
           </h3>
           <p className="mt-1 text-pretty text-lg text-neutral-500">
-            depoimentos
+          Estados  
           </p>
         </div>
         <div className="flex justify-center flex-col items-center">
           <h3 className="text-balance font-display text-3xl font-medium text-neutral-900">
-            <AnimatedNumber
+           + <AnimatedNumber
               springOptions={{
                 bounce: 0,
                 duration: 2000,
@@ -68,7 +69,21 @@ export function Numbers() {
             />
           </h3>
           <p className="mt-1 text-pretty text-lg text-neutral-500">
-            anos de existência
+          Clientes 
+          </p>
+        </div>
+        <div className="flex justify-center flex-col items-center">
+          <h3 className="text-balance font-display text-3xl font-medium text-neutral-900">
+             + <AnimatedNumber
+              springOptions={{
+                bounce: 0,
+                duration: 2000,
+              }}
+              value={value4}
+            />
+          </h3>
+          <p className="mt-1 text-pretty text-lg text-neutral-500">
+          Projetos 
           </p>
         </div>
       </div>

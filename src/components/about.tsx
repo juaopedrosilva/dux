@@ -26,7 +26,7 @@ export function About() {
             você busca inovação, eficiência e um time que realmente se importa
             com o seu sucesso, estamos prontos para ajudar.
           </p>
-          <Button variant="whatsapp" className="mt-5">Fale com um Especialista</Button>
+          {/* <Button variant="whatsapp" className="mt-5">Fale com um Especialista</Button> */}
         </div>
       </div>
     </section>

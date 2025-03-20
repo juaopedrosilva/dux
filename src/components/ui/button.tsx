@@ -51,7 +51,10 @@ function Button({
 
   const handleClick = () => {
     if (variant === "whatsapp") {
-      window.open("https://wa.me/", "_blank");
+      window.open(
+        "https://wa.me/+5511947792979?text=Ol%C3%A1%2C%20encontrei%20seu%20contato%20pelo%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20os%20servi%C3%A7os.%20Poderia%20me%20passar%20mais%20informa%C3%A7%C3%B5es%3F",
+        "_blank"
+      );
     } else {
       return props.onClick;
     }
