@@ -6,6 +6,7 @@
 
 @theme {
   --font-sans: var(--font-inter-sans);
+  --breakpoint-lg: 76rem;
 }
 
 :root {

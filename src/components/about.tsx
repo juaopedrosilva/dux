@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export function About() {
   return (
-    <section className="mt-20 px-4" id='sobre'>
+    <section className="mt-24 bg-gradient-to-b from-neutral-50 to-white pb-20 pt-24" id='sobre'>
       <div className="relative mx-auto mt-4 w-full flex flex-col md:flex-row gap-12 max-w-screen-lg overflow-hidden sm:p-12 sm:px-0">
         <Image
           src="/pessoas.jpg"

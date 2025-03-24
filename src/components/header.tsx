@@ -6,7 +6,7 @@ export function Header() {
   return (
     <header className="sticky inset-x-0 top-0 z-30 w-full transition-all">
       <div className="absolute inset-0 block border-b transition-all border-neutral-100 bg-white/75 backdrop-blur-lg dark:border-white/10 dark:bg-black/75"></div>
-      <div className="mx-auto w-full px-3 relative max-w-screen-lg lg:px-4 xl:px-0">
+      <div className="mx-auto w-full px-3 relative lg:px-4 xl:px-0 max-w-screen-lg">
         <div className="flex h-14 items-center justify-between">
           <div className="grow basis-0">
             <Image src="/logo.png" width={75} height={75} alt="Dux Logo"  />
