@@ -1,12 +1,11 @@
 "use client";
-import { Button } from "./ui/button";
 import { Instagram, Mail, Phone } from "lucide-react";
-import Link from "next/link"; 
+import Link from "next/link";
 
 export function Footer() {
   return (
     <footer className="mt-10 bg-gradient-to-b from-neutral-50 to-white pb-10 pt-1.5">
-      <div className="w-full max-w-screen-lg mt-12 mx-auto px-4 sm:px-6">
+      <div className="w-full container mt-12 mx-auto px-4 sm:px-6">
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-6">
           <div className="mb-4 md:mb-0">
             <Link href="/" className="text-xl font-bold text-brand">
@@ -22,7 +21,7 @@ export function Footer() {
               className="group relative z-0 flex"
               dir="ltr"
             >
-              <Button variant="whatsapp">Fale com um Especialista</Button>
+              {/* <Button variant="whatsapp">Fale com um Especialista</Button> */}
             </ul>
           </nav>
         </div>
@@ -33,11 +32,19 @@ export function Footer() {
             processos e maximizando resultados.
           </p>
           <div className="flex gap-4">
-            <Phone className="h-5 w-5 text-gray-500 hover:text-gray-700" />
-            <Mail  className="h-5 w-5 text-gray-500 hover:text-gray-700" />
-            <Link href="http://instagram.com/consulturiadux" target='_blank' aria-label="Instagram">
+            <a href="tel:+5511996313648" aria-label="Telefone">
+              <Phone className="h-5 w-5 text-gray-500 hover:text-gray-700" />
+            </a>
+            <a href="mailto:comercial@consultoriadux.com.br" aria-label="Email">
+              <Mail className="h-5 w-5 text-gray-500 hover:text-gray-700" />
+            </a>
+            <Link
+              href="http://instagram.com/consulturiadux"
+              target="_blank"
+              aria-label="Instagram"
+            >
               <Instagram className="h-5 w-5 text-gray-500 hover:text-gray-700" />
-            </Link> 
+            </Link>
           </div>
         </div>
       </div>

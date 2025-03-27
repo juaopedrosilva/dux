@@ -1,10 +1,11 @@
 import { BorderTrail } from "./ui/border-trail";
 import { Button } from "./ui/button";
 import { TextEffect } from "./ui/text-effect";
+import { TextLoop } from "./ui/text-loop";
 
 export function Hero() {
   return (
-    <div className="relative mx-auto mt-4 w-full max-w-screen-lg overflow-hidden rounded-2xl bg-neutral-50 p-6 text-center sm:p-12 sm:px-0">
+    <div className="relative mx-auto mt-4 w-full container overflow-hidden rounded-2xl bg-neutral-50 p-6 text-center sm:p-12 sm:px-0">
       <BorderTrail
         style={{
           boxShadow:
@@ -44,20 +45,50 @@ export function Hero() {
           per="word"
           as="h1"
           preset="blur"
-          className="mt-5 text-center font-display text-4xl font-medium text-neutral-900 sm:text-5xl sm:leading-[1.15] animate-slide-up-fade [--offset:20px] [animation-duration:1s] [animation-fill-mode:both] motion-reduce:animate-fade-in [animation-delay:100ms]"
+          className="mt-0 text-center font-display text-4xl font-medium text-neutral-900 sm:text-5xl sm:leading-[1.15] animate-slide-up-fade [--offset:20px] [animation-duration:1s] [animation-fill-mode:both] motion-reduce:animate-fade-in [animation-delay:100ms]"
         >
           Transformamos sua empresa com estratégia, gestão e inovação!
         </TextEffect>
-        <TextEffect
-          preset="blur"
-          per="word"
-          as="p"
-          delay={0.75}
-          className="mt-5 text-base text-neutral-500 sm:text-xl animate-slide-up-fade [--offset:10px] [animation-delay:200ms] [animation-duration:1s] [animation-fill-mode:both] motion-reduce:animate-fade-in"
-        >
-          Ajudamos negócios a crescerem de forma sustentável, otimizando
-          processos e maximizando resultados.
-        </TextEffect>
+        <p className="mt-5 text-base text-neutral-500 sm:text-xl animate-slide-up-fade [--offset:10px] [animation-delay:200ms] [animation-duration:1s] [animation-fill-mode:both] motion-reduce:animate-fade-in">
+          <TextEffect preset="blur" per="word" as="span" delay={0.75}>
+            Ajudamos negócios a crescerem de forma sustentável, otimizando
+            processos e maximizando
+          </TextEffect> {' '}
+          <TextLoop
+            className="overflow-y-clip font-bold text-neutral-900"
+            transition={{
+              type: "spring",
+              stiffness: 900,
+              damping: 80,
+              mass: 10,
+            }}
+            variants={{
+              initial: {
+                y: 20,
+                rotateX: 90,
+                opacity: 0,
+                filter: "blur(4px)",
+              },
+              animate: {
+                y: 0,
+                rotateX: 0,
+                opacity: 1,
+                filter: "blur(0px)",
+              },
+              exit: {
+                y: -20,
+                rotateX: -90,
+                opacity: 0,
+                filter: "blur(4px)",
+              },
+            }}
+          >
+            <span>resultados.</span>
+            <span>lucros.</span>
+            <span>eficiência.</span>
+            <span>o crescimento.</span>
+          </TextLoop>
+        </p>
       </div>
       <div className="relative mx-auto mt-10 flex max-w-fit space-x-4 animate-slide-up-fade [--offset:5px] [animation-delay:300ms] [animation-duration:1s] [animation-fill-mode:both] motion-reduce:animate-fade-in">
         <Button variant="whatsapp">Fale com um Especialista</Button>

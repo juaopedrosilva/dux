@@ -7,7 +7,7 @@ import { Textarea } from "./ui/textarea";
 export function Contacts() {
   return (
     <section className="mt-20">
-      <div className="w-full max-w-screen-lg mt-12 mx-auto sm:p-0 p-4" >
+      <div className="w-full container mt-12 mx-auto sm:p-0 p-4" >
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
           {/* Coluna Esquerda - Entre em Contato */}
           <div>
@@ -21,12 +21,12 @@ export function Contacts() {
 
             <div className="flex items-center gap-3 mb-3">
               <Phone className="h-5 w-5" />
-              <span className="text-gray-700">(11) 3472-6025</span>
+              <span className="text-gray-700">(11) 99631-3648</span>
             </div>
 
             <div className="flex items-center gap-3 mb-8">
               <Mail className="h-5 w-5" />
-              <span className="text-gray-700">dux@email.com</span>
+              <span className="text-gray-700">comercial@consultoriadux.com.br</span>
             </div>
 
             <div className="border-t border-gray-200 pt-8">

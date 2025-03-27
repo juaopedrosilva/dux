@@ -5,7 +5,7 @@ import Image from "next/image";
 export function Clients() {
   return (
     <section className="mt-16 px-4" id='clientes'>
-      <div className="w-full max-w-screen-lg mt-12 mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+      <div className="w-full container mt-12 mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
         <div>
           <h3 className="text-balance font-display text-3xl font-semibold text-brand text-center md:text-left">
             Junte-se a Grandes Empresas que Confiam em Nós

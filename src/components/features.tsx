@@ -54,7 +54,7 @@ export function Features() {
 
   return (
     <section className="mt-20 px-4" id="solucoes">
-      <div className="mx-auto w-full max-w-xl px-4 text-center">
+      <div className="mx-auto w-full container px-4 text-center">
         <h3 className="text-balance font-display text-3xl font-semibold text-brand">
           Impulsione sua Empresa com as Soluções Certas
         </h3>

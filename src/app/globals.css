@@ -136,4 +136,8 @@
   body {
     @apply bg-background text-foreground;
   }
+
+  .container {
+    width: calc(100% - 64px);
+  }
 }
