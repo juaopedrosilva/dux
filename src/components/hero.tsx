@@ -5,7 +5,7 @@ import { TextLoop } from "./ui/text-loop";
 
 export function Hero() {
   return (
-    <div className="relative mx-auto mt-4 w-full container overflow-hidden rounded-2xl bg-neutral-50 p-6 text-center sm:p-12 sm:px-0">
+    <div className="relative mx-auto  w-full h-[600px]  overflow-hidden  bg-neutral-50 text-center sm:p-12 sm:px-0">
       <BorderTrail
         style={{
           boxShadow:
@@ -40,7 +40,7 @@ export function Hero() {
       <div className="absolute -left-1/4 top-[38%] h-[135%] w-[150%] opacity-10 blur-[120px] [transform:translate3d(0,0,0)]">
         <div className="size-full bg-[conic-gradient(at_50%_50%,_#93C5FD_0deg,_#93C5FD_117deg,_#60A5FA_180deg,_#93C5FD_360deg)] [mask-image:radial-gradient(closest-side,black_100%,transparent_100%)]"></div>
       </div>
-      <div className="relative mx-auto flex w-full max-w-md flex-col items-center ">
+      <div className="relative mx-auto flex w-full max-w-4xl flex-col items-center ">
         <TextEffect
           per="word"
           as="h1"

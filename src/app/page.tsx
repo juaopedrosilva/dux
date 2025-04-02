@@ -1,4 +1,5 @@
 import { About } from "@/components/about";
+import { AboutTwo } from "@/components/about-two";
 import { Clients } from "@/components/clients";
 import { Contacts } from "@/components/contacts";
 import { Features } from "@/components/features";
@@ -12,9 +13,9 @@ export default function Home() {
     <main className="mb-5">
       <Header />
       <Hero />
-      <Numbers />
-      <About />
       <Features />
+      <AboutTwo />
+      <Numbers />
       <Clients />
       <Contacts />
       <Footer/>

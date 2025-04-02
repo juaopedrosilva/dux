@@ -41,25 +41,25 @@ export function Features() {
       description:
         "Planejamento tributário, obrigações contábeis, suporte para fusões e aquisições, elaboração de demonstrações financeiras e compliance.",
     },
-    {
-      image: <FinanceSvg className="w-full max-w-[300px] h-auto mx-auto" />,
-      reverse: true,
-      title: "Investimento Financeiro",
-      description:
-        "Planejamento estratégico de investimentos, alocação de capital, diversificação, análise de riscos e estudo de tendências de mercado.",
-    },
+    // {
+    //   image: <FinanceSvg className="w-full max-w-[300px] h-auto mx-auto" />,
+    //   reverse: true,
+    //   title: "Investimento Financeiro",
+    //   description:
+    //     "Planejamento estratégico de investimentos, alocação de capital, diversificação, análise de riscos e estudo de tendências de mercado.",
+    // },
   ];
 
   const [activeIndex, setActiveIndex] = useState(0);
 
   return (
-    <section className="mt-20 px-4" id="solucoes">
-      <div className="mx-auto w-full container px-4 text-center">
+    <section className="mt-[-230px] rounded-2xl py-12 -scale-z-95 mx-auto max-w-[1100px] px-8 bg-white" id="solucoes">
+      {/* <div className=" text-center">
         <h3 className="text-balance font-display text-3xl font-semibold text-brand">
           Impulsione sua Empresa com as Soluções Certas
         </h3>
-      </div>
-      <div className="w-full max-w-screen-lg mt-12 mx-auto">
+      </div> */}
+      <div className="w-full max-w-screen-lg mx-auto">
         <div className="mb-4 flex flex-wrap justify-center gap-2">
           {items.map((item, index) => (
             <button
