@@ -1,5 +1,5 @@
 import { BorderTrail } from "./ui/border-trail";
-import { Button } from "./ui/button";
+// import { Button } from "./ui/button";
 import { TextEffect } from "./ui/text-effect";
 import { TextLoop } from "./ui/text-loop";
 
@@ -90,9 +90,9 @@ export function Hero() {
           </TextLoop>
         </p>
       </div>
-      <div className="relative mx-auto mt-10 flex max-w-fit space-x-4 animate-slide-up-fade [--offset:5px] [animation-delay:300ms] [animation-duration:1s] [animation-fill-mode:both] motion-reduce:animate-fade-in">
+      {/* <div className="relative mx-auto mt-10 flex max-w-fit space-x-4 animate-slide-up-fade [--offset:5px] [animation-delay:300ms] [animation-duration:1s] [animation-fill-mode:both] motion-reduce:animate-fade-in">
         <Button variant="whatsapp">Fale com um Especialista</Button>
-      </div>
+      </div> */}
     </div>
   );
 }

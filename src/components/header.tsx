@@ -7,10 +7,13 @@ export function Header() {
     <header className="sticky inset-x-0 top-0 z-30 w-full transition-all">
       <div className="absolute inset-0 block border-b transition-all border-neutral-100 bg-white/75 backdrop-blur-lg dark:border-white/10 dark:bg-black/75"></div>
       <div className="mx-auto w-full px-3 relative lg:px-4 xl:px-0 container">
-        <div className="flex h-18 items-center justify-between">
+        <div className="flex h-19 items-center justify-between">
           <div className="grow basis-0">
-            <Image src="/logo.png" width={100} height={100} alt="Dux Logo"  />
+            <Image src="/logo.png" width={110} height={110} alt="Dux Logo"  />
           </div>
+          
+          <div className="flex gap">
+
           <nav data-orientation="horizontal" className="relative hidden lg:block">
             <div className="relative">
               <ul
@@ -28,6 +31,8 @@ export function Header() {
           <div className="hidden grow basis-0 justify-end gap-2 lg:flex">
             <Button variant="whatsapp">Fale com um Especialista</Button>
           </div>
+          </div>
+
         </div>
       </div>
     </header>
