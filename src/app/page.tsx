@@ -1,4 +1,3 @@
-import { About } from "@/components/about";
 import { AboutTwo } from "@/components/about-two";
 import { Clients } from "@/components/clients";
 import { Contacts } from "@/components/contacts";
