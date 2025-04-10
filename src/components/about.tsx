@@ -1,17 +1,10 @@
-import Image from "next/image";
 // import { Button } from "./ui/button";
 
 export function About() {
   return (
     <section className="mt-24 bg-gradient-to-b from-neutral-50 to-white pb-20 pt-24" id='sobre'>
       <div className="relative mx-auto mt-4 w-full flex flex-col md:flex-row gap-12 max-w-screen-lg overflow-hidden sm:p-12 sm:px-0">
-        <Image
-          src="/pessoas.jpg"
-          alt="Apple Music logo"
-          height={500}
-          width={480}
-          className="rounded-2xl w-full max-w-[400px] h-auto mx-auto md:mx-0"
-        />
+    
         <div className="text-center md:text-left">
           <h3 className="text-balance font-display text-3xl font-semibold text-brand">
             Sobre Nós
@@ -29,6 +22,7 @@ export function About() {
           {/* <Button variant="whatsapp" className="mt-5">Fale com um Especialista</Button> */}
         </div>
       </div>
+      
     </section>
   );
 }

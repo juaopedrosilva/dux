@@ -4,24 +4,86 @@ import Image from "next/image";
 
 export function Clients() {
   return (
-    <section className="mt-16 px-4" id='clientes'>
-      <div className="w-full container mt-12 mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-        <div>
-          <h3 className="text-balance font-display text-3xl font-semibold text-brand text-center md:text-left">
-            Junte-se a Grandes Empresas que Confiam em Nós
-          </h3>
-          <p className="mt-3 text-pretty text-lg text-neutral-500 text-center md:text-left">
-            Parcerias de sucesso que impulsionam inovação e crescimento.
-          </p>
-          <div className="flex justify-center md:justify-start">
-            {/* <Button variant="whatsapp" className="mt-5">Fale com um Especialista</Button> */}
+    <section className="py-16 px-4 md:px-6 lg:px-8 mt-8">
+      <div className="max-w-7xl mx-auto">
+        <div className="grid md:grid-cols-2 gap-12 items-center">
+          <div className="space-y-6">
+            <h3 className="text-balance font-display text-3xl font-semibold text-brand text-center md:text-left">
+              Junte-se a Grandes Empresas que Confiam em Nós
+            </h3>
+            <p className="text-lg text-gray-600">
+              Parcerias de sucesso que impulsionam inovação e crescimento.
+            </p>
+
           </div>
-        </div>
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-2 gap-4 place-items-center">
-          <Image src="/fiat-3.svg" alt="Fiat logo" height={100} width={100} />
-          <Image src="/gol.png" alt="Gol logo" height={100} width={100} />
-          <Image src="/alpargatas-logo.svg" alt="Alpargatas logo" height={100} width={100} />
-          <Image src="/Rede_Bandeirantes_logo_2011.svg.png" alt="Rede Bandeirantes logo" height={100} width={100} />
+          <div className="grid grid-cols-2 gap-8 md:gap-12">
+            <div className="flex items-center justify-center">
+              <div className="h-12 w-32 relative">
+                <Image
+                  src="/gol.png"
+                  alt="Tuple"
+                  width={128}
+                  height={48}
+                  className="object-contain"
+                />
+              </div>
+            </div>
+            <div className="flex items-center gap-3 justify-center">
+              <div className="h-12 w-32 relative">
+                <Image
+                  src="/gol.png"
+                  alt="Reform"
+                  width={128}
+                  height={25}
+                  className="object-contain"
+                />
+              </div>
+            </div>
+            <div className="flex items-center justify-center">
+              <div className="h-12 w-32 relative">
+                <Image
+                  src="/gol.png"
+                  alt="SavvyCal"
+                  width={128}
+                  height={25}
+                  className="object-contain"
+                />
+              </div>
+            </div>
+            <div className="flex items-center justify-center">
+              <div className="h-12 w-32 relative">
+                <Image
+                  src="/gol.png"
+                  alt="Laravel"
+                  width={128}
+                  height={25}
+                  className="object-contain"
+                />
+              </div>
+            </div>
+            <div className="flex items-center justify-center">
+              <div className="h-12 w-32 relative">
+                <Image
+                  src="/gol.png"
+                  alt="Transistor"
+                  width={128}
+                  height={25}
+                  className="object-contain"
+                />
+              </div>
+            </div>
+            <div className="flex items-center justify-center">
+              <div className="h-12 w-32 relative">
+                <Image
+                  src="/gol.png"
+                  alt="Statamic"
+                  width={128}
+                  height={25}
+                  className="object-contain"
+                />
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>

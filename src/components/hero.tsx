@@ -45,7 +45,7 @@ export function Hero() {
           per="word"
           as="h1"
           preset="blur"
-          className="mt-0 text-center font-display text-4xl font-medium text-neutral-900 sm:text-5xl sm:leading-[1.15] animate-slide-up-fade [--offset:20px] [animation-duration:1s] [animation-fill-mode:both] motion-reduce:animate-fade-in [animation-delay:100ms]"
+          className="mt-0 text-center pt-9 sm:pt-0 font-display text-4xl font-medium text-neutral-900 sm:text-5xl sm:leading-[1.15] animate-slide-up-fade [--offset:20px] [animation-duration:1s] [animation-fill-mode:both] motion-reduce:animate-fade-in [animation-delay:100ms]"
         >
           Transformamos sua empresa com estratégia, gestão e inovação!
         </TextEffect>

@@ -11,81 +11,45 @@ export function Numbers() {
   useEffect(() => {
     setValue1(3);
     setValue2(12);
-    setValue3 (150);
-    setValue4 (200);
+    setValue3(150);
+    setValue4(200);
   }, []);
 
   return (
-    <section className="mt-20">
-      <div className="mx-auto w-full max-w-xl px-4 text-center">
-        <h3 className="text-balance font-display text-3xl font-semibold  text-brand">
+    <section className="mt-20 w-full px-4 max-w-6xl mx-auto text-center">
+      {/* Texto principal */}
+      <div className="mb-12 max-w-2xl mx-auto">
+      <h3 className="text-balance font-display text-3xl font-semibold  text-brand">
           Nossos Resultados Falam Por Si
         </h3>
-        <p className="mt-3 text-pretty text-lg text-neutral-500">
-          Empresas que confiaram na nossa consultoria alcançaram mais
-          eficiência, reduziram custos e aumentaram sua lucratividade. Veja os
-          números que comprovam o impacto da nossa atuação!
+        <p className="mt-4 text-lg text-neutral-500">
+        Empresas que confiaram na nossa consultoria alcançaram mais
+        eficiência.
         </p>
       </div>
-      <div className="w-full max-w-screen-lg mt-6 mx-auto flex justify-center sm:justify-around sm:flex-row flex-col sm:gap-0 gap-4">
-        <div className="flex justify-center flex-col items-center">
-          <h3 className="text-balance font-display text-3xl font-medium text-neutral-900">
-         
-            <AnimatedNumber
-              springOptions={{
-                bounce: 0,
-                duration: 2000,
-              }}
-              value={value1}
-            />
-          </h3>
-          <p className="mt-1 text-pretty text-lg text-neutral-500">
-          Países   
-          </p>
-        </div>
-        <div className="flex justify-center flex-col items-center">
 
-          <h3 className="text-balance font-display text-3xl font-medium text-neutral-900">
-            <AnimatedNumber
-              springOptions={{
-                bounce: 0,
-                duration: 2000,
-              }}
-              value={value2}
-            />
-          </h3>
-          <p className="mt-1 text-pretty text-lg text-neutral-500">
-          Estados  
-          </p>
-        </div>
-        <div className="flex justify-center flex-col items-center">
-          <h3 className="text-balance font-display text-3xl font-medium text-neutral-900">
-           + <AnimatedNumber
-              springOptions={{
-                bounce: 0,
-                duration: 2000,
-              }}
-              value={value3}
-            />
-          </h3>
-          <p className="mt-1 text-pretty text-lg text-neutral-500">
-          Clientes 
-          </p>
-        </div>
-        <div className="flex justify-center flex-col items-center">
-          <h3 className="text-balance font-display text-3xl font-medium text-neutral-900">
-             + <AnimatedNumber
-              springOptions={{
-                bounce: 0,
-                duration: 2000,
-              }}
-              value={value4}
-            />
-          </h3>
-          <p className="mt-1 text-pretty text-lg text-neutral-500">
-          Projetos 
-          </p>
-        </div>
+      {/* Grid de cards */}
+      <div className="grid grid-cols-1 sm:grid-cols-4 gap-6">
+        {[
+          { value: value1, label: "Países" },
+          { value: value2, label: "Estados" },
+          { value: value3, label: "Clientes", prefix: "+" },
+          { value: value4, label: "Projetos", prefix: "+" },
+        ].map((item, idx) => (
+          <div
+            key={idx}
+            className="bg-white rounded-2xl shadow-sm p-6 flex flex-col items-center justify-center"
+          >
+            <h3 className="text-3xl font-semibold text-neutral-900">
+              {item.prefix || ""}
+              <AnimatedNumber
+                springOptions={{ bounce: 0, duration: 2000 }}
+                value={item.value}
+              />
+            </h3>
+            <p className="mt-2 text-lg text-neutral-500">{item.label}</p>
+          </div>
+        ))}
       </div>
     </section>
   );
