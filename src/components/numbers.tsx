@@ -17,7 +17,6 @@ export function Numbers() {
 
   return (
     <section className="mt-20 w-full px-4 max-w-6xl mx-auto text-center">
-      {/* Texto principal */}
       <div className="mb-12 max-w-2xl mx-auto">
       <h3 className="text-balance font-display text-3xl font-semibold  text-brand">
           Nossos Resultados Falam Por Si

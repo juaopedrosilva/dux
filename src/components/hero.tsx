@@ -41,21 +41,9 @@ export function Hero() {
         <div className="size-full bg-[conic-gradient(at_50%_50%,_#93C5FD_0deg,_#93C5FD_117deg,_#60A5FA_180deg,_#93C5FD_360deg)] [mask-image:radial-gradient(closest-side,black_100%,transparent_100%)]"></div>
       </div>
       <div className="relative mx-auto flex w-full max-w-4xl flex-col items-center ">
-        <TextEffect
-          per="word"
-          as="h1"
-          preset="blur"
-          className="mt-0 text-center pt-9 sm:pt-0 font-display text-4xl font-medium text-neutral-900 sm:text-5xl sm:leading-[1.15] animate-slide-up-fade [--offset:20px] [animation-duration:1s] [animation-fill-mode:both] motion-reduce:animate-fade-in [animation-delay:100ms]"
-        >
-          Transformamos sua empresa com estratégia, gestão e inovação!
-        </TextEffect>
-        <p className="mt-5 text-base text-neutral-500 sm:text-xl animate-slide-up-fade [--offset:10px] [animation-delay:200ms] [animation-duration:1s] [animation-fill-mode:both] motion-reduce:animate-fade-in">
-          <TextEffect preset="blur" per="word" as="span" delay={0.75}>
-            Ajudamos negócios a crescerem de forma sustentável, otimizando
-            processos e maximizando
-          </TextEffect> {' '}
+        <div className="max-w-4xl mx-auto px-4 text-center">
           <TextLoop
-            className="overflow-y-clip font-bold text-neutral-900"
+            className="mt-0 text-center pt-9 sm:pt-0 font-display text-3xl sm:text-4xl md:text-5xl font-medium text-neutral-900 sm:leading-[1.15] animate-slide-up-fade [--offset:20px] [animation-duration:1s] [animation-fill-mode:both] motion-reduce:animate-fade-in [animation-delay:100ms] break-words max-w-[90%] sm:max-w-3xl md:max-w-4xl"
             transition={{
               type: "spring",
               stiffness: 900,
@@ -83,11 +71,26 @@ export function Hero() {
               },
             }}
           >
-            <span>resultados.</span>
-            <span>lucros.</span>
-            <span>eficiência.</span>
-            <span>o crescimento.</span>
+            <span className="inline-block whitespace-normal">
+              Transformando desafios em soluções estratégicas para sucesso do seu negócio.
+            </span>
+            <span className="inline-block whitespace-normal">
+              Reduzimos custos, potencializamos resultados.
+            </span>
+            <span className="inline-block whitespace-normal">
+              Eficiência e estratégia para reduzir custos e maximizar resultados.
+            </span>
+            <span className="inline-block whitespace-normal">
+              Potencialize suas vendas e melhore suas margens com soluções estratégicas e eficientes.
+            </span>
           </TextLoop>
+        </div>
+
+        <p className="mt-5 text-base text-neutral-500 sm:text-xl animate-slide-up-fade [--offset:10px] [animation-delay:200ms] [animation-duration:1s] [animation-fill-mode:both] motion-reduce:animate-fade-in">
+          <TextEffect preset="blur" per="word" as="span" delay={0.75}>
+            Ajudamos negócios a crescerem de forma sustentável, otimizando
+            processos e maximizando resultados.
+          </TextEffect> {' '}
         </p>
       </div>
       {/* <div className="relative mx-auto mt-10 flex max-w-fit space-x-4 animate-slide-up-fade [--offset:5px] [animation-delay:300ms] [animation-duration:1s] [animation-fill-mode:both] motion-reduce:animate-fade-in">
