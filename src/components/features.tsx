@@ -3,18 +3,21 @@ import { useState } from "react";
 import { TransitionPanel } from "@/components/ui/transition-panel";
 import { FinanceSvg } from "@/assets/finance-svg";
 import { PricesSvg } from "@/assets/prices-svg";
+import { TwoFeatureSvg } from "@/assets/two-feature-svg";
+import { FourFeatureSvg } from "@/assets/four-features-svg";
+import { OneFeatureSvg } from "@/assets/one-features-svg";
 
 export function Features() {
   const items = [
     {
-      image: <FinanceSvg className="w-full max-w-[300px] h-auto mx-auto" />,
+      image: <OneFeatureSvg className="w-full max-w-[300px] h-auto mx-auto" />,
       reverse: false,
       title: "Processos",
       description:
         "Otimização e padronização de processos, integração ao ERP, definição de KPIs e metas, análise SWOT e melhoria dos controles internos.",
     },
     {
-      image: <FinanceSvg className="w-full max-w-[300px] h-auto mx-auto" />,
+      image: <TwoFeatureSvg className="w-full max-w-[300px] h-auto mx-auto" />,
       reverse: true,
       title: "Financeiro",
       description:
@@ -28,7 +31,7 @@ export function Features() {
         "Definição de preços estratégicos, análise de margens sob diferentes perspectivas e viabilidade de precificação para otimizar a rentabilidade.",
     },
     {
-      image: <FinanceSvg className="w-full max-w-[300px] h-auto mx-auto" />,
+      image: <FourFeatureSvg className="w-full max-w-[300px] h-auto mx-auto" />,
       reverse: true,
       title: "Viabilidade Financeira",
       description:
@@ -86,8 +89,8 @@ export function Features() {
             }}
           >
             {items.map((item, index) => (
-              <div key={index} className="mt-8 flex flex-col sm:flex-row gap-6 sm:p-0 p-4 items-center text-center sm:text-left">
-                {item.image}
+              <div key={index} className="mt-8 flex flex-col sm:flex-row gap-8 sm:p-0 p-4 text-center sm:text-left">
+                {item.image} 
                 <div className="py-2">
                   <h3 className="mb-2 text-2xl font-semibold text-brand">
                     {item.title}

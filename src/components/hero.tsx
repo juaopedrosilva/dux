@@ -1,11 +1,10 @@
 import { BorderTrail } from "./ui/border-trail";
 // import { Button } from "./ui/button";
-import { TextEffect } from "./ui/text-effect";
 import { TextLoop } from "./ui/text-loop";
 
 export function Hero() {
   return (
-    <div className="relative mx-auto  w-full h-[600px]  overflow-hidden  bg-neutral-50 text-center sm:p-12 sm:px-0">
+    <div className="relative mx-auto  w-full h-[550px]  overflow-hidden  bg-neutral-50 text-center sm:p-12 sm:px-0">
       <BorderTrail
         style={{
           boxShadow:
@@ -86,12 +85,7 @@ export function Hero() {
           </TextLoop>
         </div>
 
-        <p className="mt-5 text-base text-neutral-500 sm:text-xl animate-slide-up-fade [--offset:10px] [animation-delay:200ms] [animation-duration:1s] [animation-fill-mode:both] motion-reduce:animate-fade-in">
-          <TextEffect preset="blur" per="word" as="span" delay={0.75}>
-            Ajudamos negócios a crescerem de forma sustentável, otimizando
-            processos e maximizando resultados.
-          </TextEffect> {' '}
-        </p>
+        
       </div>
       {/* <div className="relative mx-auto mt-10 flex max-w-fit space-x-4 animate-slide-up-fade [--offset:5px] [animation-delay:300ms] [animation-duration:1s] [animation-fill-mode:both] motion-reduce:animate-fade-in">
         <Button variant="whatsapp">Fale com um Especialista</Button>
