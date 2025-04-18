@@ -1,10 +1,10 @@
 import { BorderTrail } from "./ui/border-trail";
-// import { Button } from "./ui/button";
 import { TextLoop } from "./ui/text-loop";
+import { Features } from "@/components/features";
 
 export function Hero() {
   return (
-    <div className="relative mx-auto  w-full h-[550px]  overflow-hidden  bg-neutral-50 text-center sm:p-12 sm:px-0">
+    <div className="relative mx-auto  w-full h-auto  overflow-hidden  bg-neutral-50 text-center sm:p-12 sm:px-0">
       <BorderTrail
         style={{
           boxShadow:
@@ -39,7 +39,8 @@ export function Hero() {
       <div className="absolute -left-1/4 top-[38%] h-[135%] w-[150%] opacity-10 blur-[120px] [transform:translate3d(0,0,0)]">
         <div className="size-full bg-[conic-gradient(at_50%_50%,_#93C5FD_0deg,_#93C5FD_117deg,_#60A5FA_180deg,_#93C5FD_360deg)] [mask-image:radial-gradient(closest-side,black_100%,transparent_100%)]"></div>
       </div>
-      <div className="relative mx-auto flex w-full max-w-4xl flex-col items-center ">
+      <Features />
+      <div className="relative mx-auto flex w-full max-w-4xl flex-col items-center mt-9 mb-14 ">
         <div className="max-w-4xl mx-auto px-4 text-center">
           <TextLoop
             className="mt-0 text-center pt-9 sm:pt-0 font-display text-3xl sm:text-4xl md:text-5xl font-medium text-neutral-900 sm:leading-[1.15] animate-slide-up-fade [--offset:20px] [animation-duration:1s] [animation-fill-mode:both] motion-reduce:animate-fade-in [animation-delay:100ms] break-words max-w-[90%] sm:max-w-3xl md:max-w-4xl"

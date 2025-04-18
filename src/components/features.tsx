@@ -56,7 +56,8 @@ export function Features() {
   const [activeIndex, setActiveIndex] = useState(0);
 
   return (
-    <section className="mt-[-230px] rounded-2xl py-12 -scale-z-95 mx-auto max-w-[1100px] px-8 bg-white" id="solucoes">
+    // <section className="mt-[-230px] rounded-2xl py-12 -scale-z-95 mx-auto max-w-[1100px] px-8 bg-white" id="solucoes">
+    <section className="rounded-2xl py-12 -scale-z-95 mx-auto max-w-[1100px] px-8 bg-white" id="solucoes">
       {/* <div className=" text-center">
         <h3 className="text-balance font-display text-3xl font-semibold text-brand">
           Impulsione sua Empresa com as Soluções Certas

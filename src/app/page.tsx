@@ -11,8 +11,7 @@ export default function Home() {
   return (
     <main className="mb-5">
       <Header />
-      <Hero />
-      <Features />
+      <Hero /> 
       <Numbers />
       <AboutTwo />
       <Clients />
