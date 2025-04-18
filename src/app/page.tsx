@@ -1,7 +1,6 @@
 import { AboutTwo } from "@/components/about-two";
 import { Clients } from "@/components/clients";
 import { Contacts } from "@/components/contacts";
-import { Features } from "@/components/features";
 import { Footer } from "@/components/footer";
 import { Header } from "@/components/header";
 import { Hero } from "@/components/hero";
