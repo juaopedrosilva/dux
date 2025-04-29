@@ -4,7 +4,7 @@ import { Features } from "@/components/features";
 
 export function Hero() {
   return (
-    <div className="relative mx-auto  w-full h-auto  overflow-hidden  bg-neutral-50 text-center sm:p-12 sm:px-0">
+    <div className="relative mx-auto  w-full h-auto  overflow-hidden  bg-neutral-50 text-center sm:p-12 sm:pt-4 sm:px-0">
       <BorderTrail
         style={{
           boxShadow:

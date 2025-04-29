@@ -57,7 +57,7 @@ export function Features() {
 
   return (
     // <section className="mt-[-230px] rounded-2xl py-12 -scale-z-95 mx-auto max-w-[1100px] px-8 bg-white" id="solucoes">
-    <section className="rounded-2xl py-12 -scale-z-95 mx-auto max-w-[1100px] px-8 bg-white" id="solucoes">
+    <section className="rounded-2xl pb-12 pt-3 -scale-z-95 mx-auto max-w-[1100px] px-8 bg-white" id="solucoes">
       {/* <div className=" text-center">
         <h3 className="text-balance font-display text-3xl font-semibold text-brand">
           Impulsione sua Empresa com as Soluções Certas
