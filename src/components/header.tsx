@@ -14,7 +14,7 @@ export function Header() {
               alt="Dux Logo"
               width={150}
               height={150}
-              className="w-[100px] sm:w-[150px] h-auto"
+              className="w-[85px] sm:w-[150px] h-auto"
             />
 
           </div>
@@ -35,7 +35,7 @@ export function Header() {
                 </ul>
               </div>
             </nav>
-            <div className="hidden grow basis-0 justify-end gap-2 lg:flex">
+            <div className="pt-2 sm:pt-0 grow basis-0 justify-end gap-2 lg:flex">
               <Button variant="whatsapp">Fale com um Especialista</Button>
             </div>
           </div>
